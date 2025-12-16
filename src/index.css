@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  /* LIGHT MODE – YANG */
+  --bg: #f8fafc;                 /* fondo general */
+  --surface: #ffffff;            /* cards BLANCAS */
+
+  --text-primary: #0f172a;       /* slate-900 */
+  --text-secondary: #475569;     /* slate-600 */
+
+  --border: #cbd5e1;             /* slate-300 (NO oscuro) */
+  --shadow-blue: 37, 99, 235;    /* azul vivo para sombras */
+}
+
+.dark {
+  /* DARK MODE – YIN */
+  --bg: #020617;                 /* slate-950 */
+  --surface: #020617;
+
+  --text-primary: #e5e7eb;       /* slate-200 */
+  --text-secondary: #94a3b8;     /* slate-400 */
+
+  --border: #1e293b;             /* MISMO azul */
+  --shadow-blue: 2, 6, 23;       /* rgb(2,6,23) */
+}
+
+
+body { font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial }
+
+/* prevenir scroll horizontal de TODO */
+html, body {
+  overflow-x: hidden !important;
+}
+
+.section {
+  padding-block: clamp(4rem, 8vw, 6rem);
+}
+
+.hero {
+  padding-top: clamp(5rem, 10vh, 7rem);
+  padding-bottom: clamp(3rem, 6vh, 5rem);
+}
